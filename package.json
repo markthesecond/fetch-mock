@@ -1,0 +1,17 @@
+{
+  "name": "fetch_points",
+  "version": "0.1.0",
+  "description": "An HTTP service to track and manage a user's points.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "service",
+    "fetch",
+    "points"
+  ],
+  "author": "Mark W. Ritchie II <mwritchie2@gmail.com>",
+  "license": "GPL-3.0-or-later"
+}
