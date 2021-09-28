@@ -13,5 +13,8 @@
     "points"
   ],
   "author": "Mark W. Ritchie II <mwritchie2@gmail.com>",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
