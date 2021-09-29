@@ -6,9 +6,10 @@ const router = express.Router();
 
 // route handlers for the path '/points'
 router.route('/points')
-    // makes GET req's return the point balance
+    // makes GET requests return the point balance
     .get((req,res) => {
-        res.json({message: 'Hello!'});
+        const pointTotals = points.readPoints();
+        res.json(pointTotals);
     })
     // accepts POST requests and records point transactions
     .post((req,res) => {
