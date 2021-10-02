@@ -19,5 +19,12 @@ router.route('/points')
             {message: 'Points recorded!'}
         );
     })
+    // accepts PUT requests and debits points from the balance
+    .put((req,res) => {
+        // calls spendPoints from the points controller to get the report
+        const spentPoints = points.spendPoints(req.body.points);
+        // returns 201 like with POST since this should also create transactions
+        res.status(201).json(spentPoints);
+    })
 
 module.exports = router;
